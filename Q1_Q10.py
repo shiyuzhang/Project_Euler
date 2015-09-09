@@ -25,10 +25,10 @@ def fib (number):
         return 1
     else:
         if (number % 2):
-			return (fib(number/2) * fib(number/2) + fib(number/2 + 1) * fib(number/2 + 1))
+            return (fib(number/2) * fib(number/2) + fib(number/2 + 1) * fib(number/2 + 1))
         else:
-			return (fib(number/2) * ( 2 * fib(number/2 + 1) - fib(number/2)))
-			
+            return (fib(number/2) * ( 2 * fib(number/2 + 1) - fib(number/2)))
+	
 fibn, sum, i = 0, 0, 0
 while fibn <= 4000000:
     if (fibn % 2 == 0):
