@@ -21,6 +21,11 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 '''
 
 def fib (number):
+	'''
+	Formula:
+		F(2n-1) = F(n)^2+F(n-1)^2
+		F(2n) = F(n) * (2F(n-1) + F(n))
+	'''
     if number <= 2:
         return 1
     else:
