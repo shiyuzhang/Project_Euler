@@ -132,6 +132,5 @@ print sum
 sum = 0
 for i in range (1, 101):
     sum += (100-i) * (i+101) * i
-
 print sum
 
