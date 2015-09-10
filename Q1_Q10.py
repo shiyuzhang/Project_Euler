@@ -134,3 +134,21 @@ for i in range (1, 101):
     sum += (100-i) * (i+101) * i
 print sum
 
+'''
+Question 7:
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the 10 001st prime number?
+'''
+number = 3
+i = 1
+prime_list = [2]
+while (i < 10001):
+    for n in prime_list:
+        if (number % n == 0):
+            break
+    else:
+        prime_list.append (number)
+        i += 1
+    number += 1
+
+print prime_list, prime_list[-1]
