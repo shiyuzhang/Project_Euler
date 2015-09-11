@@ -106,7 +106,11 @@ Question 5:
 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 '''
-
+i = 20
+while (i % 3 or i % 4 or i % 5 or i % 6 or i %  7 or i % 8 or i % 9 or i % 11 or i % 12\
+        or i % 13 or i % 14 or i % 15 or i % 16 or i % 17 or i % 18 or i % 19 or i % 20):
+    i += 20
+print i
 
 
 '''
@@ -133,6 +137,7 @@ sum = 0
 for i in range (1, 101):
     sum += (100-i) * (i+101) * i
 print sum
+
 
 '''
 Question 7:
