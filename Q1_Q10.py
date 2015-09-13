@@ -3,7 +3,7 @@ def generate_prime_factors (number):
     n = 2
     prime_factors = []
     
-    while (n*n < number):
+    while (n*n <= number):
         while (number % n == 0):
             prime_factors.append (n)
             number /= n
