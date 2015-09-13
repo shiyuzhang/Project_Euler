@@ -8,9 +8,10 @@ def generate_prime_factors (number):
             prime_factors.append (n)
             number /= n
         n += 1
-    prime_factors.append (number)
-    
+	if number > 1:
+		prime_factors.append (number)
     return prime_factors
+
 
 
 '''
