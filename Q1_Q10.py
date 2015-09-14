@@ -181,5 +181,18 @@ Question 10:
 The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 Find the sum of all the primes below two million.
 '''
+number = 1001000
+list = [i for i in range (2, number+1)]
+result = []
+
+while list:
+	new_prime = list[0]
+	result.append(new_prime)
+	i = 1
+	while new_prime * i <= number:
+		if new_prime * i in list:
+			list.remove (new_prime * i)
+		i += 1
+print result
 
 
